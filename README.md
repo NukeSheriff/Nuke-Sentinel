@@ -1,6 +1,6 @@
-NukeSentinel(tm)                                     
-By: NukeScripts(tm) (http://www.nukescripts.net)     
-Copyright © 2000-2008 by NukeScripts(tm)             
+**NukeSentinel by NukeScripts.Net™**
+(http://www.nukescripts.86it.us)     
+Copyright © 2000-2008 by NukeScripts.Net™             
 See CREDITS for ALL contributors
 
 Official support forums are at: http://ravenphpscripts.com/forum61.html
