@@ -1,8 +1,6 @@
-/********************************************************/
-/* NukeSentinel(tm)                                     */
-/* By: NukeScripts(tm) (http://www.nukescripts.net)     */
-/* Copyright (c) 2000-2008 by NukeScripts(tm)           */
-/********************************************************/
+NukeSentinel(tm)                                    
+By: NukeScripts(tm) (http://www.nukescripts.86it.us)    
+Copyright (c) 2000-2008 by NukeScripts(tm)          
 
 TegoNuke Mailer Adaption
 By: Montego Scripts
@@ -77,7 +75,7 @@ Copyright (c) 2004
 Flood Blocker
 Based on: Floodgate (originally submitted to NS)
 ahmetantmen@msn.com
-Copyright (c) 2004 by Ahmet Aydýn Antmen
+Copyright (c) 2004 by Ahmet AydÃ½n Antmen
 
 Bug Fixes
 By: Many members of the community
