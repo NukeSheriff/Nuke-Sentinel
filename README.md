@@ -1,26 +1,19 @@
-/********************************************************/
-/* NukeSentinel(tm)                                     */
-/* By: NukeScripts(tm) (http://www.nukescripts.net)     */
-/* Copyright © 2000-2008 by NukeScripts(tm)             */
-/* See CREDITS.txt for ALL contributors                 */
-/********************************************************/
+NukeSentinel(tm)                                     
+By: NukeScripts(tm) (http://www.nukescripts.net)     
+Copyright Â© 2000-2008 by NukeScripts(tm)             
+See CREDITS for ALL contributors
 
 Official support forums are at: http://ravenphpscripts.com/forum61.html
 If you want to use this version with Patched 2.8 or below read the post
 at: http://ravenphpscripts.com/postt4951.html or read the included
-PATCHED.txt file.
-
-
-*******************************************************************************
-
+PATCHED file.
 
 SPECIAL NOTES:
->From version 2.9 and forward, filenames have been changed from sentinel.xxx to
+From version 2.9 and forward, filenames have been changed from sentinel.xxx to
 nukesentinel.xxx for clarity. For this reason you will need to remove all old
 NukeSentinel(tm) files once you install and link the new NukeSentinel(tm) files.
 
-
-> Within the 4 block files you will note the line at the beginning:
+Within the 4 block files you will note the line at the beginning:
 if(!defined('NUKE_FILE') && !defined('BLOCK_FILE')) { die("You can't access this file directly..."); }
 
 For Patched 2.8 & below this can be changed to:
@@ -32,11 +25,6 @@ if(!defined('NUKE_FILE')) { die("You can't access this file directly..."); }
 For Patched 3.0 this can be shortened to:
 if(!defined('BLOCK_FILE')) { die("You can't access this file directly..."); }
 
-
-
-*******************************************************************************
-
-
 Sections:
 1 - Copyright Notice
 2 - Requirements & Latest Features
@@ -45,10 +33,6 @@ Sections:
 5 - Uninstallation / Deinstall
 6 - Fixing the Your_Account Module Bug
 7 - Core File Modifications
-
-
-*******************************************************************************
-
 
 Section 1: Copyright Notice:
 ----------------------------
@@ -68,9 +52,6 @@ Section 1: Copyright Notice:
   9) 64 Bit - http://64bit.us
  10) Ultra Digital - http://www.ultradigital.it
 
-
-*******************************************************************************
-
 Section 2: Requirements & Latest Features:
 ------------------------------------------
 REQUIREMENTS:
@@ -83,9 +64,6 @@ REQUIREMENTS:
 See FEATURES.txt for a current list of features:
 See CHANGES.txt for a list of the latest changes:
 
-
-*******************************************************************************
-
 Section 3: DAT VS SQL:
 ----------------------
 The simple way of updating the IP2Country data is to use the selection found
@@ -96,7 +74,6 @@ script time outs that would prevent all data from being imported.
 The alternative means of updating your IP2Country tables is to run the SQL files
 that are provided in the SQL directory directly within PHPmyadmin. See the
 IMPORT_SQL.txt file for further information.
-
 
 Section 4: Installation:
 ------------------------
@@ -149,10 +126,8 @@ html/nsnst.php               ----------------> root/nsnst.php
 sql/*.*                      ----------------> do not upload, See IMPORT_SQL.txt for info.
 * root = the root directory of your site.
 
-
 Installation or Updating Existing NukeSentinel(tm) To Latest Version After Uploading Files:
 ----------------------------------------------------------------------------------------
-
 
 Running the nsnst.php file:
 ---------------------------
@@ -161,7 +136,6 @@ Running the nsnst.php file:
 2) Then, in the address line of your browser, erase the admin.php and replace it with nsnst.php
                 For example:   http://www.YOURDOMAIN.com/nsnst.php
 This will install, upgrade, or uninstall NukeSentinel(tm) database tables.
-
 
 File Edits:
 =====================
