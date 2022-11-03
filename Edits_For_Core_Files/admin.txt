@@ -1,0 +1,30 @@
+/************************************************************************/
+/* This file is for instructional use.                                  */
+/* By: NukeScripts Network (webmaster@nukescripts.net)                  */
+/* http://www.nukescripts.net                                           */
+/* Modifications Copyright © 2000-2008 by NukeScripts Network           */
+/************************************************************************/
+/* Based on Patched 3.3 admin.php your admin.php may differ from the    */
+/* examples found here.                                                 */
+/************************************************************************/
+
+# 
+#-----[ OPEN ]------------------------------------------ 
+#
+admin.php
+
+# 
+#-----[ FIND ]------------------------------------------ 
+#
+$checkurl = $_SERVER['REQUEST_URI']; 
+if((stripos_clone($_SERVER["QUERY_STRING"],'AddAuthor')) || (stripos_clone($_SERVER["QUERY_STRING"],'VXBkYXRlQXV0aG9y')) || (stripos_clone($_SERVER["QUERY_STRING"],'QWRkQXV0aG9y')) || (stripos_clone($_SERVER["QUERY_STRING"],'UpdateAuthor')) || (preg_match("/\?admin/", "$checkurl")) || (preg_match("/\&admin/", "$checkurl"))) {
+die("Illegal Operation");
+}
+
+# 
+#-----[ COMMENT OUT ]------------------------------------------ 
+#
+//$checkurl = $_SERVER['REQUEST_URI']; 
+//if((stripos_clone($_SERVER["QUERY_STRING"],'AddAuthor')) || (stripos_clone($_SERVER["QUERY_STRING"],'VXBkYXRlQXV0aG9y')) || (stripos_clone($_SERVER["QUERY_STRING"],'QWRkQXV0aG9y')) || (stripos_clone($_SERVER["QUERY_STRING"],'UpdateAuthor')) || (preg_match("/\?admin/", "$checkurl")) || (preg_match("/\&admin/", "$checkurl"))) {
+//die("Illegal Operation");
+//}

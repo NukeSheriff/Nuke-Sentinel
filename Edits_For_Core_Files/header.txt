@@ -1,0 +1,30 @@
+/************************************************************************/
+/* This file is for instructional use.                                  */
+/* By: NukeScripts Network (webmaster@nukescripts.net)                  */
+/* http://www.nukescripts.net                                           */
+/* Modifications Copyright © 2000-2008 by NukeScripts Network           */
+/************************************************************************/
+/* Based on Patched 3.3 header.php your header.php may differ from the  */
+/* examples found here.                                                 */
+/************************************************************************/
+
+#
+#-----[ OPEN ]------------------------------------------
+#
+header.php
+
+#
+#-----[ FIND ]------------------------------------------
+#
+    themeheader();
+
+#
+#-----[ BEFORE, ADD ]------------------------------------------
+#
+    global $ab_config;
+    if($ab_config['site_switch'] == 1 && is_admin($_COOKIE['admin'])) {
+      echo '<center><img src="images/nukesentinel/disabled.png" alt="'._AB_SITEDISABLED.'" title="'._AB_SITEDISABLED.'" border="0"></center><br />'."\n";
+    }
+    if($ab_config['disable_switch'] == 1 && is_admin($_COOKIE['admin'])) {
+      echo '<center><img src="images/nukesentinel/inactive.png" alt="'._AB_NSDISABLED.'" title="'._AB_NSDISABLED.'" border="0"></center><br />'."\n";
+    }

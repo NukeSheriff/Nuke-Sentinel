@@ -1,0 +1,72 @@
+/************************************************************************/
+/* This file is for instructional use.                                  */
+/* By: NukeScripts Network (webmaster@nukescripts.net)                  */
+/* http://www.nukescripts.net                                           */
+/* Modifications Copyright © 2000-2008 by NukeScripts Network           */
+/************************************************************************/
+/* Based on Patched 3.3 Your_Account/index.php your                     */
+/* Your_Account/index.php may differ from  the examples found here.     */
+/************************************************************************/
+
+# 
+#-----[ OPEN ]------------------------------------------ 
+#
+index.php
+
+in function mail_password($username, $code) {
+# 
+#-----[ FIND ]------------------------------------------ 
+#
+global $sitename, $adminmail, $nukeurl, $user_prefix, $db, $module_name;
+
+# 
+#-----[ ADD TO IT ]------------------------------------------ 
+#
+$nsnst_const,
+
+Now it will look something like:
+global $nsnst_const, $sitename, $adminmail, $nukeurl, $user_prefix, $db, $module_name;
+
+# 
+#-----[ FIND ]------------------------------------------ 
+# This appears twice in this function
+  $host_name = $_SERVER['REMOTE_ADDR'];
+
+# 
+#-----[ REPLACE WITH ]------------------------------------------ 
+#
+  if(!defined("NUKESENTINEL_IS_LOADED")) {
+    $host_name = $_SERVER['REMOTE_ADDR'];
+  } else {
+    $host_name = $nsnst_const['remote_ip'];
+  }
+
+
+in function login($username, $user_password, $redirect, $mode, $f, $t, $random_num, $gfx_check) {
+# 
+#-----[ FIND ]------------------------------------------ 
+#
+global $setinfo, $user_prefix, $db, $module_name, $pm_login, $prefix;
+
+# 
+#-----[ ADD TO IT ]------------------------------------------ 
+#
+$nsnst_const,
+
+Now it will look something like:
+global $nsnst_const, $setinfo, $user_prefix, $db, $module_name, $pm_login, $prefix;
+
+
+# 
+#-----[ FIND ]------------------------------------------ 
+# 
+  $uname = $_SERVER['REMOTE_ADDR'];
+
+# 
+#-----[ REPLACE WITH ]------------------------------------------ 
+#
+  if(!defined("NUKESENTINEL_IS_LOADED")) {
+    $uname = $_SERVER['REMOTE_ADDR'];
+  } else {
+    $uname = $nsnst_const['remote_ip'];
+  }

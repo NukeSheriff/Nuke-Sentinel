@@ -1,0 +1,47 @@
+/************************************************************************/
+/* This file is for instructional use.                                  */
+/* By: NukeScripts Network (webmaster@nukescripts.net)                  */
+/* http://www.nukescripts.net                                           */
+/* Modifications Copyright © 2000-2008 by NukeScripts Network           */
+/************************************************************************/
+/* Based on Patched 3.3 mainfile.php. Your mainfile.php may differ      */
+/* from the examples found here.                                        */
+/************************************************************************/
+
+#
+#-----[ OPEN ]------------------------------------------
+#
+mainfile.php
+
+
+
+#
+#-----[ FIND ]------------------------------------------
+#
+@require_once(INCLUDE_PATH."config.php");
+@require_once(INCLUDE_PATH."db/db.php");
+
+#
+#-----[ AFTER ADD ]------------------------------------------
+#
+@require_once(INCLUDE_PATH."includes/nukesentinel.php");
+
+
+
+#
+#-----[ FIND ]------------------------------------------
+#
+function online() {
+  global $user, $cookie, $prefix, $db;
+  $ip = $_SERVER['REMOTE_ADDR'];
+
+#
+#-----[ CHANGE TO ]------------------------------------------
+#
+function online() {
+  global $nsnst_const, $user, $cookie, $prefix, $db;
+  if(!defined("NUKESENTINEL_IS_LOADED")) {
+    $ip = $_SERVER['REMOTE_ADDR'];
+  } else {
+    $ip = $nsnst_const['remote_ip'];
+  }

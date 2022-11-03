@@ -1,0 +1,12 @@
+/************************************************************************/
+/* This file is for instructional use.                                  */
+/* By: NukeScripts Network (webmaster@nukescripts.net)                  */
+/* http://www.nukescripts.net                                           */
+/* Modifications Copyright © 2000-2008 by NukeScripts Network           */
+/************************************************************************/
+/* Based on Patched 3.3 mainfile.php. Your mainfile.php may differ      */
+/* from the examples found here.                                        */
+/************************************************************************/
+
+Remove this file from your root directory. A new version is now in the
+/includes directory.
